@@ -1,0 +1,13 @@
+{
+  "name": "aws-emr-pyspark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "MongoDb_Cluster_Up": "sh cicd/ephemeral/mongodb-cluster/cluster_up.sh",
+    "MongoDb_Cluster_Down": "sh cicd/ephemeral/mongodb-cluster/cluster_down.sh",
+    "Etl_Stg2Raw_PySpark_MongoDb": "sh spark_submit_stg2raw.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
