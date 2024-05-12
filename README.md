@@ -17,3 +17,22 @@ export MONGODB_ATLAS_CONNECTION_URL="<above mongodb_url pattern>"
 # mongodb_uri = os.getenv("MONGODB_ATLAS_CONNECTION_URL")
 
 ```
+
+## Requirements To Run PySpark ETL
+1. Mongodb Cluster (preferably sharded, and/or MongoDB ATLAS)
+2. AWS EMR cluster setup
+3. Docker on your desktop (optional) - required only if you need to run local MongoDB cluster and not above MongoDB cluster (i.e. point no 1)
+
+## Running the PySpark ETL
+
+```shell
+
+# Optional (only if local mongodb server)
+# npm run MongoDb_Cluster_Up 
+
+npm run Etl_Stg2Raw_PySpark_MongoDb
+
+# Optional (only if local mongodb server)
+# npm run MongoDb_Cluster_Down 
+
+```
